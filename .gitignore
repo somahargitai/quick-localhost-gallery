@@ -1,5 +1,10 @@
 # images
-/public/images/*
+/public/images/*.jpg
+/public/images/*.jpeg
+/public/images/*.png
+/public/images/*.svg
+/public/images/*.gif
+
 
 # dependencies
 /node_modules
