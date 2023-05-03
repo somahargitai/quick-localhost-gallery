@@ -1,9 +1,9 @@
 # images
-/public/images/*.jpg
-/public/images/*.jpeg
-/public/images/*.png
-/public/images/*.svg
-/public/images/*.gif
+/public/*/*.jpg
+/public/*/*.jpeg
+/public/*/*.png
+/public/*/*.svg
+/public/*/*.gif
 
 
 # dependencies

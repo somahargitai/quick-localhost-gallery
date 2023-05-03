@@ -2,12 +2,16 @@ import React from "react";
 import "./App.css";
 
 const ImageGallery = () => {
+  let imageFolder;
+  imageFolder = "../public/images";
+  // imageFolder = "../public/imagesisometric";
   // get a list of all the image files in the public/images folder
   const images = require.context(
-    "../public/images",
-    true
+    // "../public/images", 
+    "../public/imagesisometric",
+    true,
     // false,
-    // /\.(png|jpe?g|svg)$/
+    /\.(png|jpe?g|svg)$/
   );
   const imageKeys = images.keys();
   const imageNames = imageKeys.map((imageKey) => {
@@ -33,8 +37,8 @@ const ImageGallery = () => {
               // put it on top layer wit higher z-index
               zIndex: 1,
               // move up 20px
-                position: "relative",
-                top: "-20px",
+              position: "relative",
+              top: "-20px",
 
               // make it 50% transparent
               opacity: 1,
